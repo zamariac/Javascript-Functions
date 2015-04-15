@@ -1,0 +1,13 @@
+{
+    "name": "js-functions",
+    "version": "0.0.1",
+    "title": "JavaScript Functions",
+    "description": "Practice writing some JavaScript functions.",
+    "difficultyModes": [
+        "Normal"
+    ],
+    "keywords": [
+        "JavaScript"
+    ],
+    "supplementalFiles": []
+}

@@ -152,21 +152,21 @@ function sortLetters(noun) {
  * the upper left to the lower right).
  * For example:
  * [
- *	 [1, 0, 0],
+ *   [1, 0, 0],
  *   [0, 2, 0],
  *   [0, 0, 3]
  * ]
  * is a diagonal matrix.
  *
  * [
- *	 [1, 0, 2],
+ *   [1, 0, 2],
  *   [0, 2, 0],
  *   [0, 0, 3]
  * ]
  * is not a diagonal matrix.
  *
  * [
- *	 [1, 0, 0],
+ *   [1, 0, 0],
  *   [0, 2, 0]
  * ]
  * is not a diagonal matrix.

@@ -206,3 +206,26 @@ function absVal(integer) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
+
+/*
+ * PROBLEM 18: (hard)
+ * Write a function called validateParentheses that takes a string of
+ * parentheses. The string can contain the following characters repeated any
+ * number of times in any order: ()[]{}
+ *
+ * The function should return true if the parentheses are in a valid order and
+ * false if they are not. One type of parentheses cannot close before it has
+ * been opened and one type of parentheses cannot be closed while a different
+ * type of parentheses is open. All parentheses that are opened must also be
+ * closed.
+ *
+ * For example:
+ * validateParentheses(']') === false;
+ * validateParentheses('[') === false;
+ * validateParentheses('[]') === true;
+ * validateParentheses('{[]}') === true;
+ * validateParentheses('([)]') === false;
+ * validateParentheses('{[(){()}]}') === true;
+ *
+ * If the input is invalid throw an 'Invalid Input' exception.
+ */

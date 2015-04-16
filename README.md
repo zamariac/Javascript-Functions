@@ -25,6 +25,7 @@ After completing this assignment, you should…
 ### Requirements
 
 * No JSHint warnings or errors
+* Functions must be named **exactly** as the instructions describe.
 
 
 ## Normal Mode
@@ -33,7 +34,7 @@ Copy and paste the contents of the [functions.js](functions.js) file into your o
 
 ## Notes
 
-Notes go here...
+Some of the problems in this assignment have the skeleton of the functions already created for you. In the later / harder problems you will need to create the functions from scratch. 
 
 ## Additional Resources
 

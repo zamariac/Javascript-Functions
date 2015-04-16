@@ -78,8 +78,8 @@ function absVal(integer) {
 
 /*
  * PROBLEM 8: (medium)
- * Write a function called `sumSquares` that returns the sum of squares of all integers from 1 up to
- * and including a given positive, non-zero integer N.
+ * Write a function called `sumSquares` that returns the sum of squares of all
+ * integers from 1 up to and including a given positive, non-zero integer N.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
@@ -146,8 +146,9 @@ function absVal(integer) {
 
 /*
  * PROBLEM 15: (hard)
- * Write a function called `countBoth` that takes two arrays of integers a and b. The function
- * should return the number of elements that exist in both a and b.
+ * Write a function called `countBoth` that takes two arrays of integers a and 
+ * b. The function should return the number of elements that exist in both a and
+ * b.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
@@ -180,6 +181,28 @@ function absVal(integer) {
  *
  * Write a function called `isDiagonalMatrix` that takes a matrix and returns
  * true if the matrix is a diagonal matrix. Otherwise return false.
+ *
+ * If the input is invalid throw an 'Invalid Input' exception.
+ */
+
+/*
+ * PROBLEM 17: (hard)
+ * An anagram is a type of word play, the result of rearranging the letters of a
+ * word or phrase to produce a new word or phrase, using all the original
+ * letters exactly once.
+ *
+ * Write a function called `isAnagram` that takes two arrays of strings of equal 
+ * lengths arr1 and arr2. The function should return a new array of the same 
+ * length as the input with boolean values at each position i. The boolean value
+ * at position i of the result array should be true if the strings at position i
+ * in arr1 and arr2 are anagrams of each other. Otherwise the boolean at
+ * position i of the result array should be false.
+ *
+ * For example:
+ * isAnagram(
+ * 		['cinema', 'shot', 'aba', 'rain'],
+ * 		['iceman', 'hots', 'bab', 'train']
+ * ) === [true, true, false, false];
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */

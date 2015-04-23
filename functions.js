@@ -62,6 +62,8 @@ function absVal(integer) {
  * smaller of the two numbers.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Hard mode: do this without using a for loop.
  */
 
 /*
@@ -229,3 +231,20 @@ function absVal(integer) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
+
+/* 
+ * PROBLEM 19: (hard)
+ * Write a function called flattenArray that takes an array of any type of
+ * element, and flattens it, such that any element in the given array that is an
+ * array is converted to a list of non-arrays. For example:
+ *
+ * flattenArray([1, {a: [2, 3]}, 4, [5, [6]], [[7], 8, 9], 10])
+ * === [1, {a: [2, 3]}, 4, 5, 6, 7, 8, 9, 10]
+ *
+ * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Insane mode: do this without recursion
+ */
+
+
+

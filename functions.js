@@ -57,13 +57,21 @@ function absVal(integer) {
 }
 
 /*
- * PROBLEM 6: (easy)
+ * PROBLEM 6A: (easy)
  * Write a function called `myMin` that takes two integers and returns the
  * smaller of the two numbers.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ */
+
+/*
+ * PROBLEM 6B: (easy) - Actual Interview Question
+ * Write a function called `myMax` that takes an array of integers ans returns
+ * the largest.
  *
- * Hard mode: do this without using a for loop.
+ * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Insane mode: do this without using a for loop.
  */
 
 /*
@@ -188,7 +196,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 17: (hard)
+ * PROBLEM 17: (hard) - Actual Interview Question
  * An anagram is a type of word play, the result of rearranging the letters of a
  * word or phrase to produce a new word or phrase, using all the original
  * letters exactly once.
@@ -210,7 +218,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 18: (hard)
+ * PROBLEM 18: (hard) - Actual Interview Question
  * Write a function called validateParentheses that takes a string of
  * parentheses. The string can contain the following characters repeated any
  * number of times in any order: ()[]{}
@@ -233,7 +241,7 @@ function absVal(integer) {
  */
 
 /* 
- * PROBLEM 19: (hard)
+ * PROBLEM 19: (hard) - Actual Interview Question
  * Write a function called flattenArray that takes an array of any type of
  * element, and flattens it, such that any element in the given array that is an
  * array is converted to a list of non-arrays. For example:

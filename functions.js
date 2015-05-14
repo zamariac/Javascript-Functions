@@ -1,5 +1,5 @@
 /*
- * PROBLEM 1: (easy)
+ * PROBLEM `checkData`: (easy)
  * Write a function that takes a string and checks to make sure that the string
  * has a length of exactly three. Return true if the string length is three or
  * false if it is not three.
@@ -11,7 +11,7 @@ function checkData(inputString) {
 }
 
 /*
- * PROBLEM 2: (easy)
+ * PROBLEM `concatenateArrays`: (easy)
  * Write a function that, given two arrays of integers a and b, returns an array
  * that is formed by the elements of a followed by the elements of b.
  *
@@ -22,7 +22,7 @@ function concatenateArrays(a, b) {
 }
 
 /*
- * PROBLEM 3: (easy)
+ * PROBLEM `fixProperNoun`: (easy)
  * Proper nouns always begin with a capital letter, followed by small letters.
  * Write a function called `fixProperNoun` that takes a potentially improperly
  * capitalized proper noun and returns the same noun with the proper
@@ -35,7 +35,7 @@ function fixProperNoun(noun) {
 }
 
 /*
- * PROBLEM 4: (easy)
+ * PROBLEM `sortLetters`: (easy)
  * Write a function called `sortLetters` that returns a string that sorts all 
  * the letters from a given string in the alphabetical order.
  *
@@ -46,7 +46,7 @@ function sortLetters(inputString) {
 }
 
 /*
- * PROBLEM 5: (easy)
+ * PROBLEM `absVal`: (easy)
  * Write a function called `absVal` that return the absolute value of a given 
  * integer. Don't use Math.abs(...)
  *
@@ -57,7 +57,7 @@ function absVal(integer) {
 }
 
 /*
- * PROBLEM 6A: (easy)
+ * PROBLEM `myMin`: (easy)
  * Write a function called `myMin` that takes two integers and returns the
  * smaller of the two numbers.
  *
@@ -65,7 +65,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 6B: (easy) - Actual Interview Question
+ * PROBLEM `myMax`: (easy) - Actual Interview Question
  * Write a function called `myMax` that takes an array of integers ans returns
  * the largest.
  *
@@ -75,7 +75,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 7: (easy)
+ * PROBLEM `getMonth`: (easy)
  * Write a function called `getMonth` that maps a given integer to a month.
  *
  * For example:
@@ -87,7 +87,20 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 8: (medium)
+ * PROBLEM `randomElement`: (medium)
+ * Create a function called `randomElement` that takes an array of values and
+ * returns one randomly selected value from that array.
+ */
+
+/*
+ * PROBLEM `studentPairs`: (medium)
+ * Create a javascript function called `studentPairs` that takes an array of
+ * student names and returns an array of randomly selected pairs of students
+ * (array of arrays).
+ */
+
+/*
+ * PROBLEM `sumSquares`: (medium)
  * Write a function called `sumSquares` that returns the sum of squares of all
  * integers from 1 up to and including a given positive, non-zero integer N.
  *
@@ -95,7 +108,7 @@ function absVal(integer) {
  */
 
 /* 
- * PROBLEM 9: (medium)
+ * PROBLEM `findMaxDiff`: (medium)
  * Given an array of integers, write a function called `findMaxDiff` that finds
  * the maximal difference between any two adjacent elements.
  *
@@ -103,7 +116,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 10: (medium)
+ * PROBLEM `insertDashes`: (medium)
  * Write a function called `insertDashes` that transforms a given sentence into
  * a new one with dashes between each two consecutive letters.
  * For example: insertDashes('abba test') => a-b-b-a t-e-s-t
@@ -112,7 +125,7 @@ function absVal(integer) {
  */
 
 /* 
- * PROBLEM 11: (medium)
+ * PROBLEM `mySubstring`mySubstring: (medium)
  * Implement a function called `mySubstring` that can output the substring of 
  * the given string within specified bounds.
  * 
@@ -124,7 +137,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 12: (medium)
+ * PROBLEM `splitSwap`: (medium)
  * Write a function called `splitSwap` that swaps two halves of a given array.
  * If the array has an odd number of elements the array should be split in half
  * by rounding down the number of elements divided by two.
@@ -135,7 +148,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 13: (medium)
+ * PROBLEM `smallMultiples`: (medium)
  * For given n and k write a function called `smallMultiples` that returns the
  * count of the number of multiples of k that are not greater than n.
  *
@@ -145,8 +158,35 @@ function absVal(integer) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 
+/* 
+ * PROBLEM `rot13`: (hard)
+ * Create a function called `rot13` that takes an unencrypted string and returns
+ * the [ROT-13](http://en.wikipedia.org/wiki/ROT13) version of that string.
+ *
+ * The input should only contain lower-case alphabetic characters. If the input
+ * is invalid throw an 'Invalid Input' exception.
+ */
+
 /*
- * PROBLEM 14: (hard)
+ * PROBLEM `derot13`: (hard)
+ * Create a function called `derot13` that takes a ROT-13 encrypted string and
+ * returns the decrypted version of that string.
+ *
+ * The input should only contain lower-case alphabetic characters. If the input
+ * is invalid throw an 'Invalid Input' exception.
+ */
+
+/*
+ * PROBLEM `rotn`: (hard)
+ * Create a function called `rotn` that takes an unencrypted string and an
+ * integer (n) and returns the ROT-N version of that string.
+ *
+ * The input should only contain lower-case alphabetic characters. If the input
+ * is invalid throw an 'Invalid Input' exception.
+ */
+
+/*
+ * PROBLEM `findBoth`: (hard)
  * Write a function called `findBoth` that takes two arrays of integers a and b 
  * returns an array that includes only the elements that appear in both a and b.
  * A value should not appear more than once in the returned array.
@@ -155,7 +195,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 15: (hard)
+ * PROBLEM `countBoth`: (hard)
  * Write a function called `countBoth` that takes two arrays of integers a and 
  * b. The function should return the number of elements that exist in both a and
  * b.
@@ -164,7 +204,7 @@ function absVal(integer) {
  */
 
 /* 
- * PROBLEM 16: (hard)
+ * PROBLEM `isDiagonalMatrix`: (hard)
  * In linear algebra, a square matrix (array of arrays) is called a diagonal 
  * matrix if all entries outside the main diagonal are zero (the diagonal from 
  * the upper left to the lower right).
@@ -196,7 +236,7 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 17: (hard) - Actual Interview Question
+ * PROBLEM `isAnagram`: (hard) - Actual Interview Question
  * An anagram is a type of word play, the result of rearranging the letters of a
  * word or phrase to produce a new word or phrase, using all the original
  * letters exactly once.
@@ -218,8 +258,8 @@ function absVal(integer) {
  */
 
 /*
- * PROBLEM 18: (hard) - Actual Interview Question
- * Write a function called validateParentheses that takes a string of
+ * PROBLEM `validateParentheses`: (hard) - Actual Interview Question
+ * Write a function called `validateParentheses` that takes a string of
  * parentheses. The string can contain the following characters repeated any
  * number of times in any order: ()[]{}
  *
@@ -241,7 +281,7 @@ function absVal(integer) {
  */
 
 /* 
- * PROBLEM 19: (hard) - Actual Interview Question
+ * PROBLEM `flattenArray`: (hard) - Actual Interview Question
  * Write a function called flattenArray that takes an array of any type of
  * element, and flattens it, such that any element in the given array that is an
  * array is converted to a list of non-arrays. For example:
@@ -251,7 +291,7 @@ function absVal(integer) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  *
- * Insane mode: do this without recursion
+ * Insane mode: do this without recursion.
  */
 
 

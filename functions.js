@@ -7,7 +7,14 @@
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function checkData(inputString) {
-	// your code goes here
+
+ if (inputString.length=== 3){
+
+ 	return true;
+ }
+else {
+	return false; 
+}
 }
 
 /*
@@ -18,7 +25,17 @@ function checkData(inputString) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function concatenateArrays(a, b) {
-	// your code goes here
+
+	var newArray= []
+
+	for ( var i= 0; i < a.length; i=i+2) {
+
+	}
+
+	if (concatenateArrays)
+
+
+	
 }
 
 /*

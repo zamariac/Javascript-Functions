@@ -5,6 +5,7 @@
  * false if it is not three.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+
  */
 function checkData(inputString) {
 
@@ -28,15 +29,18 @@ function concatenateArrays(a, b) {
 
 	var newArray= []
 
-	for ( var i= 0; i < a.length; i=i+2) {
-
+	for ( var i= 0; i < a.length; i=i+1) {
+        newArray.push(a[i])
 	}
 
-	if (concatenateArrays)
+    for (var i= 0; i < b.length; i=i+1){
+        newArray.push(b[i])
 
+    }
 
+    return newArray;
 	
-}
+    
 
 /*
  * PROBLEM `fixProperNoun`: (easy)
@@ -48,7 +52,14 @@ function concatenateArrays(a, b) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function fixProperNoun(noun) {
-	// your code goes here
+ if(typeof noun !== 'string' || noun.length === 0) {
+        throw 'Invalid Input';
+    }
+
+    noun = noun.toLowerCase();
+    var fixedCase = noun.charAt(0).toUpperCase();
+    fixedCase += noun.substring(1);
+    return fixedCase;
 }
 
 /*
@@ -59,7 +70,10 @@ function fixProperNoun(noun) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function sortLetters(inputString) {
-	// your code goes here
+    if(typeof inputString !== 'string') {
+        throw 'Invalid Input';
+    }
+    return inputString.split('').sort().join('');
 }
 
 /*
@@ -70,7 +84,22 @@ function sortLetters(inputString) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function absVal(integer) {
-	// your code goes here
+	    if(typeof integer != 'number' || isNaN(integer)) {
+        throw 'Invalid Input';
+    }
+
+    if(Math.floor(integer) !== integer) {
+        throw 'Invalid Input';
+    }
+
+    if(integer < 0) {
+        return -integer;
+    }
+    else {
+        return integer;
+    }
+
+
 }
 
 /*
@@ -79,7 +108,31 @@ function absVal(integer) {
  * smaller of the two numbers.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
- */
+ */ function myMin (integer1, integer2){
+
+ 	 if(typeof integer1 != 'number' || isNaN(integer1)) {
+        throw 'Invalid Input';
+    }
+    if(Math.floor(integer1) !== integer1) {
+        throw 'Invalid Input';
+    }
+
+    if(typeof integer2 != 'number' || isNaN(integer2)) {
+        throw 'Invalid Input';
+    }
+    if(Math.floor(integer2) !== integer2) {
+        throw 'Invalid Input';
+    }
+
+    if(integer1 < integer2) {
+        return integer1;
+    }
+
+    return integer2;
+
+}
+
+ }
 
 /*
  * PROBLEM `myMax`: (easy) - Actual Interview Question
@@ -251,6 +304,21 @@ function absVal(integer) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
+        function isDiagonalMatrix(matrix) {
+            // var isDiagonal = 
+            for(var row = 0; row < matrix.length; row++){
+                for(var col= 0; col <matrix[row].length; col++){
+                       if (row !== col && matrix[row][col] !== 0) {
+                         return false;
+                       }
+                }
+            }
+            return true;
+        }
+
+
+
+
 
 /*
  * PROBLEM `isAnagram`: (hard) - Actual Interview Question
@@ -296,6 +364,39 @@ function absVal(integer) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
+        function validateParenthese(parens){
+                var stack = [];
+               for(var i=0; i<parens.length; i++){
+                    var currentParen= parens.charAt(i);
+                    if (isOpen(currentParen)){
+                            stack.push(currentParen);
+                    }
+                    else if(isClose(currentParen)){
+                        var lastParen = stack.pop();
+                        if(!doesMatch(lastParen, currentParen)){
+                            return false;
+                        }
+                    }
+                }
+        }
+
+        function isOpen(paren) {
+            return (paren === '[' || paren == '{' || paren === '(')
+        }
+        function isClose(paren) {
+            return (paren === ']' || paren == ']' || paren === '0')
+        }
+
+        function doesMatch(paren1, paren2) {
+            if(paren1 === '[' && paren2 ===']')
+                return true;
+            if(paren1 === '{' && paren2 ==='}')
+                return true;
+            if(paren1 === '(' && paren2 ===')')
+                return true;
+
+            return false;
+        }
 
 /* 
  * PROBLEM `flattenArray`: (hard) - Actual Interview Question
@@ -310,6 +411,48 @@ function absVal(integer) {
  *
  * Insane mode: do this without recursion.
  */
+    function flattenArray(array) {
+            for (var i=0; i<array.length; i++)
+                if(Array.isArray(array[i]){
+                    var flattened = flattenArray(array[i]);
+                    returnVal = returnVal.concat(flattened);
+                }
+        else{
+            returnVal.push(array[i]);
+        }
+    }
+        return returnVal;
 
+}
+        function regularFactorial(number) {
+            var num = 1;
+            for (var i=2; i<=number; i++){
+                    num *=1;
+        }
 
+        return num;
 
+    }
+
+    function recursiveFactorial (number) {
+        if (number === 1) return 1;
+        if (number === 2) return 2; 
+
+        return number * recursiveFactorial(number-1);
+    }
+
+// ----------or
+
+    function flattenArray(array) {
+        var returnVal = []
+
+        while(array.length > 0){
+            var val = array.pop();
+            if(Array.isArray(val)) {
+                    array= array.concat(val);
+                }
+                else{
+                    returnVal.push(val);
+                }
+        }
+    }

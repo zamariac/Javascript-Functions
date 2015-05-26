@@ -143,6 +143,18 @@ function absVal(integer) {
  *
  * Insane mode: do this without using a for loop.
  */
+    function myMax(inputArray) {
+        if (!inputArray || inoutArray.constructor !== Array) {
+            throw 'Invalid Input';
+        }
+    if (!inputArray.length) {
+        throw 'Invalid Input';
+    }
+    if(inputArray[0]) !== parseInt(inputArray[0],10){
+        throw 'Invalid Input';
+    }
+
+
 
 /*
  * PROBLEM `getMonth`: (easy)
@@ -155,6 +167,28 @@ function absVal(integer) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
+ function getMonth(m) {
+    if (m ! == parseInt(m, 10)) {
+        throw 'Invalid Input';
+    }
+    if (m < 1 || m > 12) {
+        throw 'Invalid Input';
+    }
+    return [
+     'January',
+     'February',
+     'March',
+     'April',
+     'May',
+     'June',
+     'July',
+     'August',
+     'September',
+     'October',
+     'November',
+     'December',
+     ] [m-1];
+}
 
 /*
  * PROBLEM `randomElement`: (medium)

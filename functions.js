@@ -209,15 +209,28 @@ function absVal(integer) {
  * integers from 1 up to and including a given positive, non-zero integer N.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
- */
+ */function sumSquares(N) {
+    if(N !== parseInt(N, 10)) {
+        throw 'Invalid Input';
+    } 
+    if(N < 1) {
+        throw ' Invalid Input';
+    }
 
+    var sum = 0;
+    for (var i=1; i<=N; i++) {
+        sum += i*i;
+    }
+    return sum;
+}
 /* 
  * PROBLEM `findMaxDiff`: (medium)
  * Given an array of integers, write a function called `findMaxDiff` that finds
  * the maximal difference between any two adjacent elements.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
- */
+ 
+
 
 /*
  * PROBLEM `insertDashes`: (medium)
